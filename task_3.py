@@ -3,7 +3,7 @@ class PointsForPlace:
     def get_points_for_place(place):
         points = 0
         if place == str(place):
-            return 'Ошибка: введите количество очков, равное месту'
+            return 'Ошибка: введите число количества очков, равное месту'
         elif place > 100:
             return 'Баллы начисляются только первым 100 участникам'
         elif place < 1:
@@ -16,7 +16,7 @@ class PointsForMeters:
     def get_points_for_meters(meters):
         points = 0
         if meters == str(meters):
-            return 'Ошибка: введите количество очков с учётом расстояния'
+            return 'Ошибка: введите число количества очков с учётом расстояния'
         elif meters < 0:
             return 'Количество метров не может быть отрицательным'
         points += meters * 0.5
